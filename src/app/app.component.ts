@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app';
+  value: number;
+  date: Date;
+  name: string;
+
+
+  constructor(){
+    this.value = 1.94141;
+    this.date = new Date();
+    this.name = 'Kify';
+  }
 }

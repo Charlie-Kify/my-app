@@ -1,0 +1,28 @@
+<h1>Mi primer componente!</h1>
+<input type="text" name="name" [(ngModel)]="name">
+<p>El valor del atributo name es: {{name}}
+</p>
+
+<hr>
+
+<div>
+    <div>
+        <label for="">Carro amarillo</label>
+        <input type="radio" name="cars" [(ngModel)]="carSelected" value="../../assets/cars/carro-amarillo.jpeg">
+    </div>
+    <div>
+        <label for="">Carro azul</label>
+        <input type="radio" name="cars" [(ngModel)]="carSelected" value="../../assets/cars/carro-azul.jpeg">
+    </div>
+    <div>
+        <label for="">Carro gris</label>
+        <input type="radio" name="cars" [(ngModel)]="carSelected" value="../../assets/cars/carro-gris.jpeg">
+    </div>
+    <div>
+        <label for="">Carro rojo</label>
+        <input type="radio" name="cars" [(ngModel)]="carSelected" value="../../assets/cars/carro-rojo.jpeg">
+    </div>
+    <div>
+        <img src="{{carSelected}}" alt="">
+    </div>
+</div>
